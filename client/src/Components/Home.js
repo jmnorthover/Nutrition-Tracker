@@ -30,7 +30,7 @@ const Home = ({ date, setDate }) => {
     const updatedDay = { ...day };
     updatedDay[mealName] = day[mealName].filter(entry => entry._id !== id);
     setDay(updatedDay);
-    removeEntry(id, date, mealName).then(res => console.log(res.data.message));
+    removeEntry(id, date, mealName);
   };
 
   const totals = getTotals(Object.values(day));
@@ -54,7 +54,6 @@ const Home = ({ date, setDate }) => {
               selectedDays={date}
               onDayClick={day => {
                 setDate(day);
-                console.log(day);
               }}
             />
           </div>

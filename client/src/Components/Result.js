@@ -16,7 +16,6 @@ const Result = ({ result, date }) => {
     e.preventDefault();
 
     addEntry({ servings, meal, ...result }, date).then(res => {
-      console.log(res);
       M.toast({ html: 'Food added!' });
     });
   };

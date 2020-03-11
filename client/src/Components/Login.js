@@ -20,7 +20,6 @@ const Login = ({ setUser }) => {
       }
       window.localStorage.setItem('nutritionAppToken', res.data.token);
       setUser(true);
-      console.log(res);
     } catch (error) {
       if (error.response) {
         setErrorMessage(error.response.data.message);
