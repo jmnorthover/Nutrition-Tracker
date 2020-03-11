@@ -1,0 +1,238 @@
+:root {
+  --primary: #f4511e;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+button {
+  background-color: var(--primary) !important;
+}
+
+button:hover {
+  background-color: #d84315 !important;
+}
+
+input:focus + label {
+  color: var(--primary) !important;
+}
+
+input:focus {
+  border-bottom: 1px solid var(--primary) !important;
+  box-shadow: 0 1px 0 0 var(--primary) !important;
+}
+
+ul.dropdown-content.select-dropdown li span {
+  color: #000;
+}
+
+.home-header {
+  padding-bottom: 1rem;
+}
+
+.home-header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.collapsible-header {
+  font-size: 1.3rem;
+}
+
+.search-options {
+  margin-bottom: 0.5rem;
+}
+
+.options-submit {
+  margin-left: 1rem;
+}
+
+.collapsible-body {
+  background-color: white;
+}
+
+.nutrition-info {
+  margin-bottom: 1rem;
+}
+
+.nutrition-info li {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.meal-display {
+  padding-top: 0.5rem;
+  padding-bottom: 3rem;
+  margin-top: 1rem;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.modal {
+  width: 35%;
+  min-width: 20rem;
+}
+
+.container {
+  margin: 0 auto;
+  min-width: 500px;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  max-width: 70rem;
+}
+
+.meal-table {
+  width: 92%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.meal-table td {
+  max-width: 8rem;
+}
+
+.delete-button {
+  cursor: pointer;
+}
+
+.totals {
+  width: 70%;
+  margin: 0 auto;
+  min-width: 30rem;
+  max-width: 40rem;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between !important;
+}
+
+.brand-name {
+  color: rgb(134, 134, 134);
+  margin-left: 0.5rem;
+}
+
+.brand-logo {
+  font-size: 1.6rem !important;
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.brand-logo:hover {
+  color: rgb(214, 214, 214);
+}
+
+.brand-logo i {
+  margin-right: 0.5rem !important;
+}
+
+.DayPicker *:focus {
+  outline: none;
+}
+
+.DayPicker {
+  width: 350px;
+}
+
+.DayPicker-Month {
+  width: 310px;
+  height: 250px;
+}
+
+.date-header {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.date-info {
+  display: flex;
+  justify-content: center;
+}
+
+.calendar-button {
+  margin-left: 1rem;
+}
+
+.login-form {
+  margin: 0 auto;
+  width: 32rem;
+  background-color: white;
+  padding: 2rem;
+  padding-top: 1rem;
+  border-radius: 0.25rem;
+  position: relative;
+}
+
+.login-form h4 {
+  margin-top: 0.5rem;
+}
+
+.login-button {
+  font-size: 1.1rem;
+  height: 2.8rem;
+  width: 12rem;
+}
+
+.register-button {
+  background-color: #e0e0e0 !important;
+  color: black;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+.register-button:hover {
+  background-color: #cacaca !important;
+}
+
+.right {
+  margin-right: 1.2rem;
+  font-size: 1.3rem;
+  transition: 0.2s;
+}
+
+.right:hover {
+  color: rgb(214, 214, 214);
+  cursor: pointer;
+}
+
+.logout {
+  display: flex;
+}
+
+.logout i {
+  margin-left: 0.7rem;
+}
+
+.food-search {
+  width: 30%;
+  min-width: 20rem;
+  margin: 0 auto;
+}
+
+.search-form input::placeholder {
+  color: rgb(150, 150, 150);
+}
+
+.login-error {
+  width: 60%;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: rgba(255, 0, 0, 0.5);
+  font-size: 1.2rem;
+  color: rgb(170, 0, 0);
+}
+
+.DayPicker-Day--today {
+  color: black !important;
+}
+
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+  background-color: var(--primary) !important;
+  color: #f0f8ff !important;
+}

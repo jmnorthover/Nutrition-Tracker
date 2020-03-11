@@ -1,0 +1,7 @@
+server/node_modules
+server/test_requests
+server/.eslintrc.json
+server/.env
+
+client/node_modules
+client/build
