@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { format } from 'date-fns';
 
-const baseUrl = 'http://localhost:8000/api';
+const baseUrl = '/api';
 
 // Get the user's entries for a particular date
 export const getDay = date => {
