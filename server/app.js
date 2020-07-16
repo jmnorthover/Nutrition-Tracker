@@ -21,12 +21,12 @@ app.use(helmet());
 
 app.use(express.json());
 
+app.use(express.static(path.join(__dirname, 'build')));
+
 app.use('/api/days', dayRouter);
 app.use('/api/entries', entryRouter);
 app.use('/api/users', userRouter);
 app.use('/api/foodsearch', foodsearchRouter);
-
-app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
