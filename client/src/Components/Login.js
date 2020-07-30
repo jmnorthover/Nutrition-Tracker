@@ -9,7 +9,7 @@ const Login = ({ setUser }) => {
   const [errorMessage, setErrorMessage] = useState('');
   const [register, setRegister] = useState(false);
 
-  const submitInfo = async e => {
+  const submitInfo = async (e) => {
     e.preventDefault();
     try {
       let res;
@@ -43,7 +43,7 @@ const Login = ({ setUser }) => {
               type="text"
               id="username"
               value={username}
-              onChange={e => setUsername(e.target.value)}
+              onChange={(e) => setUsername(e.target.value)}
               required
               minLength="6"
               maxLength="30"
@@ -52,10 +52,10 @@ const Login = ({ setUser }) => {
           </div>
           <div className="input-field col s12">
             <input
-              type="password"
+              type="text"
               id="password"
               value={password}
-              onChange={e => setPassword(e.target.value)}
+              onChange={(e) => setPassword(e.target.value)}
               required
               minLength="6"
               maxLength="30"
