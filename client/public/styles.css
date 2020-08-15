@@ -76,10 +76,10 @@ ul.dropdown-content.select-dropdown li span {
 
 .container {
   margin: 0 auto;
-  min-width: 500px;
   margin-top: 1rem;
   margin-bottom: 5rem;
-  padding: 2rem;
+  padding: 1rem;
+  width: 100%;
   max-width: 70rem;
 }
 
@@ -89,9 +89,9 @@ ul.dropdown-content.select-dropdown li span {
   font-size: 1.1rem;
 }
 
-.meal-table td {
+/* .meal-table td {
   max-width: 8rem;
-}
+} */
 
 .delete-button {
   cursor: pointer;
@@ -100,7 +100,6 @@ ul.dropdown-content.select-dropdown li span {
 .totals {
   width: 70%;
   margin: 0 auto;
-  min-width: 30rem;
   max-width: 40rem;
   margin-top: 1rem;
   font-size: 1.3rem;
@@ -133,12 +132,13 @@ ul.dropdown-content.select-dropdown li span {
 }
 
 .DayPicker {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
 }
 
 .DayPicker-Month {
   width: 310px;
-  height: 250px;
+  height: 310px;
 }
 
 .date-header {
@@ -157,7 +157,8 @@ ul.dropdown-content.select-dropdown li span {
 
 .login-form {
   margin: 0 auto;
-  width: 32rem;
+  width: 100%;
+  max-width: 36rem;
   background-color: white;
   padding: 2rem;
   padding-top: 1rem;

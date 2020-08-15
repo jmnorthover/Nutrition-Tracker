@@ -4,7 +4,7 @@ import M from 'materialize-css';
 const TableRow = ({ entry, deleteEntry, mealName }) => {
   useEffect(() => M.AutoInit(), []);
   return (
-    <tr className="food-row">
+    <tr>
       <td>{entry.food.name}</td>
       <td>{Math.round(entry.food.calories * entry.servings)}</td>
       <td>{Math.round(entry.food.protein * entry.servings)}g</td>

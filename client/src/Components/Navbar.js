@@ -10,7 +10,7 @@ const Navbar = ({ user, setUser }) => {
     <nav className="blue-grey darken-3">
       <div className="nav-wrapper">
         <Link to="/">
-          <div className="brand-logo">
+          <div className="brand-logo left">
             <i className="material-icons">fitness_center</i>
             Nutrition Tracker
           </div>

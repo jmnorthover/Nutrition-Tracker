@@ -4,7 +4,7 @@ import TableRow from './TableRow';
 const MealTable = ({ entries, deleteEntry, mealName }) => {
   return (
     <div>
-      <table className="highlight centered meal-table">
+      <table className="highlight centered responsive-table meal-table">
         <thead>
           <tr>
             <th>Name</th>
@@ -17,7 +17,7 @@ const MealTable = ({ entries, deleteEntry, mealName }) => {
           </tr>
         </thead>
         <tbody>
-          {entries.map(entry => (
+          {entries.map((entry) => (
             <TableRow
               key={entry._id}
               entry={entry}

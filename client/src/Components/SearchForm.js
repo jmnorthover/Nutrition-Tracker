@@ -6,7 +6,7 @@ const SearchForm = () => {
 
   const history = useHistory();
 
-  const handleSearch = e => {
+  const handleSearch = (e) => {
     e.preventDefault();
     if (search !== '') {
       history.push(`/search/${search}`);
@@ -17,8 +17,8 @@ const SearchForm = () => {
     <form className="search-form" onSubmit={handleSearch}>
       <div className="input-field">
         <input
-          placeholder="Search the database for a food..."
-          onChange={e => setSearch(e.target.value)}
+          placeholder="Search for a food to add..."
+          onChange={(e) => setSearch(e.target.value)}
           value={search}
         />
       </div>
