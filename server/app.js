@@ -17,17 +17,22 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.use(compression());
+
 app.use(helmet());
 
 app.use(express.json());
 
+// serve static files
 app.use(express.static(path.join(__dirname, 'build')));
 
+// controller routing
 app.use('/api/days', dayRouter);
 app.use('/api/entries', entryRouter);
 app.use('/api/users', userRouter);
 app.use('/api/foodsearch', foodsearchRouter);
 
+// for unhandled requests, serve index.html
+// client-side routing will display the correct content or a 404 page
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });

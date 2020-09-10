@@ -89,10 +89,6 @@ ul.dropdown-content.select-dropdown li span {
   font-size: 1.1rem;
 }
 
-/* .meal-table td {
-  max-width: 8rem;
-} */
-
 .delete-button {
   cursor: pointer;
 }
@@ -129,16 +125,6 @@ ul.dropdown-content.select-dropdown li span {
 
 .DayPicker *:focus {
   outline: none;
-}
-
-.DayPicker {
-  width: 100%;
-  max-width: 350px;
-}
-
-.DayPicker-Month {
-  width: 310px;
-  height: 310px;
 }
 
 .date-header {

@@ -1,13 +1,13 @@
 const Day = require('../../Schema/daySchema');
 
 // Retrieves a day with the provided date
-const getDay = async id => {
+const getDay = async (id) => {
   const day = await Day.findOne({ _id: id });
   return day;
 };
 
 // Retrieves a day with the provided date and all food info for that day
-const getPopulatedDay = async id => {
+const getPopulatedDay = async (id) => {
   const day = await Day.findOne({ _id: id }, '-__v -_id').populate({
     path: ' breakfast lunch dinner snacks',
     select: '-__v',

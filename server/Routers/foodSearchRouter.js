@@ -5,6 +5,7 @@ const { externalURL, appId, appKey } = require('../Config/keys');
 
 const router = express.Router();
 
+// retrieves food search results from third party API
 router.get('/:query', auth, async (req, res) => {
   const { query } = req.params;
   axios({
@@ -24,10 +25,10 @@ router.get('/:query', auth, async (req, res) => {
       ],
     },
   })
-    .then(response => {
+    .then((response) => {
       console.log(response.data);
       const { hits } = response.data;
-      const results = hits.map(hit => {
+      const results = hits.map((hit) => {
         return {
           name: hit.fields.item_name,
           brand: hit.fields.brand_name,
@@ -40,7 +41,7 @@ router.get('/:query', auth, async (req, res) => {
       });
       res.status(200).json(results);
     })
-    .catch(error => {
+    .catch((error) => {
       console.log(error);
       res.status(404).json({ message: 'Unable to search' });
     });
